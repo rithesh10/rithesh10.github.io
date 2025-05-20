@@ -57,25 +57,27 @@ const Achievements = () => {
   ];
 
   return (
-    <section id="achievements" className="py-20 px-6">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-portfolio-navy relative after:content-[''] after:block after:w-16 after:h-[2px] after:bg-portfolio-highlight after:mt-2">
-          Achievements & Awards
-        </h2>
+    <>
+    </>
+    // <section id="achievements" className="py-20 px-6">
+    //   <div className="max-w-5xl mx-auto">
+    //     <h2 className="text-3xl font-bold mb-8 text-portfolio-navy relative after:content-[''] after:block after:w-16 after:h-[2px] after:bg-portfolio-highlight after:mt-2">
+    //       Achievements & Awards
+    //     </h2>
         
-        <div className="grid sm:grid-cols-2 gap-6">
-          {achievements.map((achievement, index) => (
-            <AchievementCard
-              key={index}
-              title={achievement.title}
-              organization={achievement.organization}
-              date={achievement.date}
-              description={achievement.description}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    //     <div className="grid sm:grid-cols-2 gap-6">
+    //       {achievements.map((achievement, index) => (
+    //         <AchievementCard
+    //           key={index}
+    //           title={achievement.title}
+    //           organization={achievement.organization}
+    //           date={achievement.date}
+    //           description={achievement.description}
+    //         />
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
   );
 };
 

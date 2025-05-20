@@ -1,27 +1,28 @@
-
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, ExternalLink } from "lucide-react";
+import { Github, Linkedin, ExternalLink, Mail } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
     { 
       name: "GitHub", 
       icon: Github, 
-      url: "https://github.com/username" 
+      url: "https://github.com/rithesh10" 
     },
     { 
       name: "LinkedIn", 
       icon: Linkedin, 
-      url: "https://linkedin.com/in/username" 
+      url: "https://linkedin.com/in/rithesh10" 
     },
     { 
       name: "LeetCode", 
       icon: ExternalLink, 
-      url: "https://leetcode.com/username" 
+      url: "https://leetcode.com/rithesh10" 
     }
   ];
+
+  const handleSendEmail = () => {
+    window.location.href = "mailto:asanthularithesh@gmail.com?subject=Portfolio%20Contact";
+  };
 
   return (
     <section id="contact" className="py-20 px-6 bg-gray-50">
@@ -38,17 +39,13 @@ const Contact = () => {
             </p>
             
             <div className="flex flex-col space-y-4 mb-8">
-              <form className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
-                  <Input placeholder="Name" className="border-portfolio-slate/20" />
-                  <Input placeholder="Email" type="email" className="border-portfolio-slate/20" />
-                </div>
-                <Input placeholder="Subject" className="border-portfolio-slate/20" />
-                <Textarea placeholder="Message" rows={5} className="border-portfolio-slate/20" />
-                <Button className="bg-portfolio-navy hover:bg-portfolio-navy/90 text-white">
-                  Send Message
-                </Button>
-              </form>
+              <Button 
+                onClick={handleSendEmail}
+                className="bg-portfolio-navy hover:bg-portfolio-navy/90 text-white flex items-center justify-center gap-2 py-6"
+              >
+                <Mail className="h-5 w-5" />
+                Send Me an Email
+              </Button>
             </div>
           </div>
           
@@ -61,13 +58,13 @@ const Contact = () => {
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
-                  <span>john.doe@example.com</span>
+                  <span>asanthularithesh@gmail.com</span>
                 </p>
                 <p className="flex items-center text-portfolio-slate">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 text-portfolio-highlight" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
-                  <span>San Francisco, CA</span>
+                  <span>Hyderabad, India</span>
                 </p>
               </div>
             </div>

@@ -1,16 +1,15 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Calendar } from "lucide-react";
 
-const EducationItem = ({ 
-  degree, 
-  institution, 
-  period, 
-  description 
-}: { 
-  degree: string; 
-  institution: string; 
-  period: string; 
+const EducationItem = ({
+  degree,
+  institution,
+  period,
+  description,
+}: {
+  degree: string;
+  institution: string;
+  period: string;
   description: string;
 }) => {
   return (
@@ -36,23 +35,25 @@ const EducationItem = ({
 const Education = () => {
   const educationData = [
     {
-      degree: "Master of Computer Science",
-      institution: "Stanford University",
-      period: "2019 - 2021",
-      description: "Specialized in Artificial Intelligence and Machine Learning with a focus on natural language processing applications."
+      degree: "Bachelor of Technology in Computer Science",
+      institution: "Keshav Memorial Institute of Technology",
+      period: "2022 - Present",
+      description:
+        "Currently pursuing my degree with a focus on software engineering, data structures, and algorithms.",
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "Massachusetts Institute of Technology",
-      period: "2015 - 2019",
-      description: "Graduated with honors. Participated in undergraduate research in distributed systems and blockchain technology."
+      degree: "Higher Secondary Education",
+      institution: "Sri Chaitanya Junior College",
+      period: "2020 - 2022",
+      description:
+        "Completed higher secondary education with a focus on mathematics and computer science.",
     },
     {
-      degree: "High School Diploma",
-      institution: "Phillips Exeter Academy",
-      period: "2011 - 2015",
-      description: "Graduated top of class with advanced courses in mathematics and computer science."
-    }
+      degree: "Secondary School Education",
+      institution: "Carmer convent High School",
+      period: "2020",
+      description: "Completed secondary school with strong academic performance.",
+    },
   ];
 
   return (
@@ -61,7 +62,7 @@ const Education = () => {
         <h2 className="text-3xl font-bold mb-8 text-portfolio-navy relative after:content-[''] after:block after:w-16 after:h-[2px] after:bg-portfolio-highlight after:mt-2">
           Education
         </h2>
-        
+
         <div className="space-y-6">
           {educationData.map((edu, index) => (
             <EducationItem
