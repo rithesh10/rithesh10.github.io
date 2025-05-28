@@ -92,7 +92,7 @@ const Projects = () => {
       description:
         "An AI-powered fitness app that generates personalized workout and diet plans using Gemini API. Includes tracking, user authentication, and MongoDB integration.",
       technologies: ["React", "Node.js", "MongoDB", "Gemini API", "Tailwind"],
-      githubLink: "https://github.com/yourusername/workout-app",
+      githubLink: "https://github.com/rithesh10/workout2",
       liveLink: "https://workout-app-demo.com",
       image: "/workout2.png",
     },
@@ -101,7 +101,7 @@ const Projects = () => {
       description:
         "Full-stack testing platform for online quizzes with features like timed assessments, score analysis, and secure login.",
       technologies: ["React", "Node.js", "MongoDB"],
-      githubLink: "https://github.com/yourusername/ats-system",
+      githubLink: "https://github.com/rithesh10/InterviewPreparationBot",
       liveLink: "https://ats-demo.com",
       image: "/ATS.png",
     },
@@ -110,7 +110,7 @@ const Projects = () => {
       description:
         "A chatbot built using Gemini API for providing emotional and mental health support to students. Focused on stress relief and self-help.",
       technologies: ["React", "Node.js", "Gemini API"],
-      githubLink: "https://github.com/yourusername/manas-chatbot",
+      githubLink: "https://github.com/rithesh10/ps",
       liveLink: "https://manas-demo.com",
       image: "/manas.png",
     },
