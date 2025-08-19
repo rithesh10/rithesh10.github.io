@@ -67,7 +67,7 @@ const ProjectCard = ({
             Code
           </a>
         </Button>
-        {/* {liveLink && (
+        {liveLink && (
           <Button
             variant="ghost"
             size="sm"
@@ -79,7 +79,7 @@ const ProjectCard = ({
               Live
             </a>
           </Button>
-        )} */}
+        )}
       </CardFooter>
     </Card>
   );
@@ -93,7 +93,7 @@ const Projects = () => {
         "An AI-powered fitness app that generates personalized workout and diet plans using Gemini API. Includes tracking, user authentication, and MongoDB integration.",
       technologies: ["React", "Node.js", "MongoDB", "Gemini API", "Tailwind"],
       githubLink: "https://github.com/rithesh10/workout2",
-      liveLink: "https://workout-app-demo.com",
+      liveLink: "https://workout-fs4z.onrender.com",
       image: "/workout2.png",
     },
     {
