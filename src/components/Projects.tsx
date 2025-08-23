@@ -102,7 +102,7 @@ const Projects = () => {
         "Full-stack testing platform for online quizzes with features like timed assessments, score analysis, and secure login.",
       technologies: ["React", "Node.js", "MongoDB"],
       githubLink: "https://github.com/rithesh10/InterviewPreparationBot",
-      liveLink: "https://ats-demo.com",
+      liveLink: "https://interviewbot-mn3i.onrender.com",
       image: "/ATS.png",
     },
     {
